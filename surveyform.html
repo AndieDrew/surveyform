@@ -3,8 +3,99 @@
   <head>
     <link href="surveyform.css" type="text/css" rel="stylesheet" />
   </head>
-  <title>survey</title>
+  <title>Burgy Survy</title>
+
   <body>
-    <h1>Survey Form</h1>
+    <h1 id="title">Bergylicious!</h1>
+    <p id="description">Create your very own burger!</p>
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label"
+          >Name
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter name here."
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter email here."
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label for="number" id="number-label"
+          >Age
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="100"
+            placeholder="Enter age here."
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label for="dropdown" id="option-label"
+          >Choose size
+          <select id="dropdown">
+            <option>small</option>
+            <option>medium</option>
+            <option>large</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label for="rare">
+          <input id="rare" type="radio" value="1" name="cook" />rare
+        </label>
+        <label for="medium">
+          <input id="medium" type="radio" value="2" name="cook" />medium
+        </label>
+        <label for="well-done">
+          <input id="well-done" type="radio" value="3" name="cook" />well done
+        </label>
+      </div>
+      <div>
+        <label for="lettuce">
+          <input
+            id="lettuce"
+            type="checkbox"
+            value="1"
+            name="toppings"
+          />Lettuce
+        </label>
+        <label for="tomato">
+          <input id="tomato" type="checkbox" value="2" name="toppings" />Tomato
+        </label>
+        <label for="pickle">
+          <input id="pickle" type="checkbox" value="3" name="toppings" />Pickle
+        </label>
+        <label for="onion">
+          <input id="onion" type="checkbox" value="4" name="toppings" />onion
+        </label>
+        <label for="ketchup">
+          <input id="Ketchup" type="checkbox" value="5" name="Ketchup" />Lettuce
+        </label>
+      </div>
+      <div>
+        <label for="comment"
+          >Any ideas for new ingrediants?
+          <textarea id="comment" placeholder="Comment here."></textarea>
+        </label>
+      </div>
+      <div>
+        <button id="submit" type="submit">submit</button>
+      </div>
+    </form>
   </body>
 </html>
