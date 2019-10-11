@@ -7,7 +7,7 @@
 
   <body>
     <h1 id="title">Bergylicious!</h1>
-    <p id="description">Create your very own burger!</p>
+    <p id="description">Create your perfect burger!</p>
     <form id="survey-form">
       <div>
         <label for="name" id="name-label"
@@ -46,46 +46,133 @@
       </div>
       <div>
         <label for="dropdown" id="option-label"
-          >Choose size
+          >How many patties?
           <select id="dropdown">
-            <option>small</option>
-            <option>medium</option>
-            <option>large</option>
+            <option>one</option>
+            <option>two</option>
+            <option>three</option>
           </select>
         </label>
       </div>
-      <div>
-        <label for="rare">
-          <input id="rare" type="radio" value="1" name="cook" />rare
-        </label>
-        <label for="medium">
-          <input id="medium" type="radio" value="2" name="cook" />medium
-        </label>
-        <label for="well-done">
-          <input id="well-done" type="radio" value="3" name="cook" />well done
-        </label>
+      <div id="allradio">
+        <ul style="list-style: none;">
+          <li class="radio">
+            <label class="labels" for="rare"
+              >How do you like the patty cooked?
+              <input
+                class="choice"
+                id="rare"
+                type="radio"
+                value="1"
+                name="cook"
+              />rare
+            </label>
+          </li>
+          <li class="radio">
+            <label class="labels" for="medium">
+              <input
+                class="choice"
+                id="medium"
+                type="radio"
+                value="2"
+                name="cook"
+              />medium
+            </label>
+          </li>
+          <li class="radio">
+            <label class="labels" for="well">
+              <input
+                class="choice"
+                id="well"
+                type="radio"
+                value="3"
+                name="cook"
+              />well
+            </label>
+          </li>
+          <li class="radio">
+            <label class="labels" for="well-done">
+              <input
+                class="choice"
+                id="well-done"
+                type="radio"
+                value="3"
+                name="cook"
+              />well done
+            </label>
+          </li>
+        </ul>
       </div>
-      <div>
-        <label for="lettuce">
-          <input
-            id="lettuce"
-            type="checkbox"
-            value="1"
-            name="toppings"
-          />Lettuce
-        </label>
-        <label for="tomato">
-          <input id="tomato" type="checkbox" value="2" name="toppings" />Tomato
-        </label>
-        <label for="pickle">
-          <input id="pickle" type="checkbox" value="3" name="toppings" />Pickle
-        </label>
-        <label for="onion">
-          <input id="onion" type="checkbox" value="4" name="toppings" />onion
-        </label>
-        <label for="ketchup">
-          <input id="Ketchup" type="checkbox" value="5" name="Ketchup" />Lettuce
-        </label>
+      <div id="allcheckbox">
+        <ul style="list-style: none;">
+          <li class="checkbox">
+            <label class="labels" for="lettuce"
+              >Pick your favorite condimates
+              <input
+                class="choice"
+                id="lettuce"
+                type="checkbox"
+                value="1"
+                name="toppings"
+              />Lettuce
+            </label>
+          </li>
+          <li class="checkbox">
+            <label class="labels" for="tomato">
+              <input
+                class="choice"
+                id="tomato"
+                type="checkbox"
+                value="2"
+                name="toppings"
+              />Tomato
+            </label>
+          </li>
+          <li class="checkbox">
+            <label class="labels" for="pickle">
+              <input
+                class="choice"
+                id="pickle"
+                type="checkbox"
+                value="3"
+                name="toppings"
+              />Pickle
+            </label>
+          </li>
+          <li class="checkbox">
+            <label class="labels" for="onion">
+              <input
+                class="choice"
+                id="onion"
+                type="checkbox"
+                value="4"
+                name="toppings"
+              />onion
+            </label>
+          </li>
+          <li class="checkbox">
+            <label class="labels" for="ketchup">
+              <input
+                class="choice"
+                id="ketchup"
+                type="checkbox"
+                value="5"
+                name="Ketchup"
+              />Ketchup
+            </label>
+          </li>
+          <li class="checkbox">
+            <label class="labels" for="mustard">
+              <input
+                class="choice"
+                id="mustard"
+                type="checkbox"
+                value="5"
+                name="mustard"
+              />mustard
+            </label>
+          </li>
+        </ul>
       </div>
       <div>
         <label for="comment"
