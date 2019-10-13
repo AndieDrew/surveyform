@@ -2,10 +2,10 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-h1 {
+#title {
   font-size: 80px;
 }
-p {
+#discription {
   font-size: 30px;
 }
 .class {
