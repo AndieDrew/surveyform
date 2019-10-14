@@ -1,13 +1,19 @@
 body {
-  text-align: center;
   margin: 0 auto;
 }
+
 #title {
   font-size: 80px;
 }
 #discription {
   font-size: 30px;
 }
-.class {
+
+ul {
+  list-style: none;
+  display: table;
+  margin: 0 auto;
+}
+.text-align {
   text-align: center;
 }
