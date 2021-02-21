@@ -1,19 +1,38 @@
 body {
+  background: linear-gradient(#A77932, #F83434, #84D644, #633200);
+  background-attachment: fixed;
   margin: 0 auto;
 }
 
 #title {
   font-size: 80px;
 }
+
 #discription {
   font-size: 30px;
+}
+
+#submit {
+  cursor: pointer;
+background-color: #134d71;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+margin-top: 2.5%;
+margin-bottom: 2%;
+padding: 8px 25px;
+width: 225px;
+font-size: 20px;
+outline: none;
 }
 
 ul {
   list-style: none;
   display: table;
   margin: 0 auto;
+  margin-left: 43%;
 }
+
 .text-align {
   text-align: center;
 }
